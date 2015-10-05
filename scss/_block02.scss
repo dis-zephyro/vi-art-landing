@@ -1,0 +1,53 @@
+.b02 {
+	color: #2d2d2d;
+	background: #fff;
+	padding-top: 65px;
+	padding-bottom: 65px;
+
+	h2 {
+		padding: 0 30px;
+		margin-bottom: 65px;
+	}
+
+	.b02__show {
+		padding: 0;
+		list-style: none;
+		margin: 0 0 85px 0;
+
+		li {
+			width: 20%;
+			float: left;
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 26px;
+			text-align: center;
+			padding: 180px 15px 0 15px;
+
+			&.item1 {
+				background: url("../img/b02__item1.jpg") top center no-repeat;
+			}
+
+			&.item2 {
+				background: url("../img/b02__item2.jpg") top center no-repeat;
+			}
+
+			&.item3 {
+				background: url("../img/b02__item3.jpg") top center no-repeat;
+			}
+
+			&.item4 {
+				background: url("../img/b02__item4.jpg") top center no-repeat;
+			}
+
+			&.item5 {
+				background: url("../img/b02__item5.jpg") top center no-repeat;
+			}
+		}
+	}
+
+	.b02__text {
+		font-size: 24px;
+		line-height: 36px;
+		text-transform: uppercase;
+	}
+}

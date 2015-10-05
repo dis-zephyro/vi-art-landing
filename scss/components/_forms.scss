@@ -1,0 +1,161 @@
+//
+// Forms
+// --------------------------------------------------
+
+.form__row {
+    @include clearfix;
+    margin: 0 -10px 40px -10px;
+
+    .form__col {
+        float: left;
+        width: 33.33%;
+        padding: 0 10px;
+    }
+}
+
+// Common form controls
+
+.form-control {
+    width: 100%;
+    display: block;
+    color: #b0b0b0;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 9px 20px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fff;
+    background-image: none;
+    text-transform: uppercase;
+    border: 1px solid #bc7e26;
+    @include border-radius(5px);
+    @include box-shadow(inset 0px 5px 5px 0px rgba(0, 0, 0, 0.2));
+    @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
+
+    &:focus,
+    &:hover {
+        outline: 0;
+    }
+
+    &:focus {
+        border-color: #614319;
+    }
+
+    // Placeholder
+    @include placeholder(#b0b0b0);
+
+}
+
+textarea.form-control {
+    height: auto;
+}
+
+// Form groups
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+
+fieldset {
+      padding: 0;
+      margin: 0;
+      border: 0;
+      min-width: 0;
+}
+
+label {
+      display: inline-block;
+      max-width: 100%;
+      margin-bottom: 5px;
+      font-weight: bold;
+}
+
+
+input[type="search"] {
+      @include box-sizing(border-box);
+}
+
+// Position radios and checkboxes better
+input[type="radio"],
+input[type="checkbox"] {
+      margin: 4px 0 0;
+      margin-top: 1px \9; // IE8-9
+      line-height: normal;
+}
+
+input[type="file"] {
+      display: block;
+}
+
+// Make range inputs behave like textual form controls
+input[type="range"] {
+      display: block;
+      width: 100%;
+}
+
+// Make multiple select elements height not fixed
+select[multiple],
+select[size] {
+      height: auto;
+}
+
+// Focus for file, radio, and checkbox
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+      @include tab-focus;
+}
+
+// Checkboxes and radios
+//
+// Indent the labels to position radios/checkboxes as hanging controls.
+
+.radio,
+.checkbox {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  label {
+      min-height: $line-height-computed; // Ensure the input doesn't jump when there is no text
+      padding-left: 20px;
+      margin-bottom: 0;
+      font-weight: normal;
+      cursor: pointer;
+  }
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 4px \9;
+}
+
+.radio + .radio,
+.checkbox + .checkbox {
+    margin-top: -5px; // Move up sibling radios or checkboxes for tighter spacing
+}
+
+// Radios and checkboxes on same line
+.radio-inline,
+.checkbox-inline {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 0;
+    vertical-align: middle;
+    font-weight: normal;
+    cursor: pointer;
+}
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+    margin-top: 0;
+    margin-left: 10px; // space out consecutive inline controls
+}
+

@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=latin,cyrillic);
+
+
+// Variables
+@import "variables";
+
+
+// Mixins
+@import "mixins/grid-framework";
+@import "mixins/grid";
+@import "mixins/clearfix";
+@import "mixins/responsive-visibility";
+
+
+@import "mixins/gradients";
+@import "mixins/image";
+@import "mixins/opacity";
+@import "mixins/tab-focus";
+@import "mixins/vendor-prefixes";
+@import "mixins/center-block";
+
+@import "mixins/form";
+@import "mixins/buttons";
+
+
+// Reset and dependencies
+@import "components/normalize";
+@import "components/print";
+
+// Core CSS
+// @import "components/grid";
+@import "components/forms";
+@import "components/buttons";
+
+// Components
+@import "components/responsive-embed";
+// @import "components/responsive-utilities";
+
+// Utilities
+@import "components/utilities";
+
+// @import "slick";
+
+
+
+// Pages
+
+@import "block01";
+@import "block02";
+@import "block03";
+@import "block04";
+@import "block05";
+@import "block06";
+@import "block07";
+@import "footer";
+
+
+/* Base styles
+   ========================= */
+
+* {
+    @include box-sizing(border-box);
+}
+*:before,
+*:after {
+    @include box-sizing(border-box);
+}
+
+
+// Body reset
+
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: $text-color;
+    background-color: $body-bg;
+}
+
+
+.container {
+    width: 1020px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    @include clearfix;
+    @include center-block;
+}
+
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+
+// Links
+
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+[role="button"] {
+    cursor: pointer;
+}
+
+

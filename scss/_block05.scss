@@ -1,0 +1,108 @@
+.b05 {
+	color: #2d2d2d;
+	height: 690px;
+	padding-top: 65px;
+	background: #f5f5f5;
+
+
+	.work {
+
+		.works-article {
+			padding: 0;
+			font-size: 0;
+			line-height: 0;
+			list-style: none;
+			text-align: center;
+			margin: 0 0 40px 0;
+
+			li {
+				outline: none;
+				padding: 0 20px;
+				font-size: 24px;
+				line-height: 48px;
+				display: inline-block;
+
+				a {
+					color: #2d2d2d;
+					text-decoration: none;
+					display: inline-block;
+					text-transform: uppercase;
+
+					&:hover {
+						color: #ffb400;
+					}
+				}
+
+				&.ui-state-active {
+
+					a {
+						color: #ffb400;
+					}
+				}
+			}
+		}
+
+		.work__slider {
+			width: 1000px;
+			position: relative;
+
+			.work__slider-item {
+				float: left;
+				width: 320px;
+				height: 320px;
+				outline: none;
+				margin-right: 20px;
+				overflow: hidden;
+			}
+
+			.work__slider-video {
+				float: left;
+				width: 480px;
+				height: 320px;
+				outline: none;
+				margin-right: 20px;
+				overflow: hidden;
+			}
+
+			.slick-list {
+				max-height: 320px;
+				overflow: hidden;
+			}
+		}
+
+		.owl-controls {
+			margin: 0;
+			font-size: 0;
+			line-height: 0;
+			list-style: none;
+			text-align: center;
+			padding: 70px 0 0 0;
+
+			.owl-nav {
+				display: none;
+				visibility: hidden;
+			}
+
+			.owl-dots {
+				text-align: center;
+				display: inline-block;
+
+				.owl-dot {
+					width: 20px;
+					height: 20px;
+					margin: 0 5px;
+					overflow: hidden;
+					display: inline-block;
+					background: transparent;
+					background-image: none;
+					@include border-radius(50%);
+					border: 3px solid $color-yellow;
+
+					&.active {
+						background: $color-yellow;
+					}
+				}
+			}
+		}
+	}
+}

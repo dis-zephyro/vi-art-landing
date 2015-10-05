@@ -1,0 +1,68 @@
+.b06 {
+	color: #2d2d2d;
+	padding-top: 65px;
+	padding-bottom: 65px;
+	background: #fff url("../img/b06_bg.png") top center no-repeat;
+
+	.step {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			float: left;
+			width: 33.33%;
+			font-size: 18px;
+			font-weight: 500;
+			position: relative;
+			text-align: center;
+			padding: 175px 30px 0 30px;
+
+			&:before {
+				top: 0;
+				left: 50%;
+				content: " ";
+				width: 150px;
+				height: 150px;
+				margin-left: -75px;
+				position: absolute;
+				background: url("../img/b06_sprite.png") no-repeat;
+			}
+
+			&:after {
+				top: 55px;
+				right: -45px;
+				width: 90px;
+				height: 35px;
+				content: " ";
+				position: absolute;
+				background: url("../img/b06_sprite.png") 0 -150px no-repeat;
+			}
+
+			&.item1:before {
+				background-position: 0 0;
+			}
+
+			&.item2:before {
+				background-position: -150px 0;
+			}
+
+			&.item3 {
+
+				:before {
+					background-position: -300px 0;
+				}
+
+				&:after {
+					display: none;
+				}
+			}
+
+			.step__name {
+				font-size: 30px;
+				color: $color-yellow;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

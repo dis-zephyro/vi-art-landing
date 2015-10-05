@@ -1,0 +1,17 @@
+.b03 {
+	color: #fff;
+	height: 500px;
+	font-size: 18px;
+	line-height: 28px;
+	padding-top: 60px;
+	text-align: center;
+	background: url("../img/b03_bg.jpg") top center no-repeat;
+
+	h2 {
+		color: $color-yellow;
+	}
+
+	p {
+		font-style: italic;
+	}
+}
