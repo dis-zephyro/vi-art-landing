@@ -22,7 +22,6 @@
 @import "mixins/form";
 @import "mixins/buttons";
 
-
 // Reset and dependencies
 @import "components/normalize";
 @import "components/print";
@@ -150,3 +149,21 @@ a {
 }
 
 
+// Модальное окно
+
+
+.popup-block {
+    width: 340px;
+    padding: 30px 20px;
+    background: url("../img/b04_bg.jpg") top center no-repeat;
+
+    .popup-block-title {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+    }
+}

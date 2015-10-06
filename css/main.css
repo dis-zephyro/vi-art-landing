@@ -259,11 +259,12 @@ th {
 
 .form-control {
   width: 100%;
+  height: 40px;
   display: block;
   color: #b0b0b0;
   font-size: 14px;
   font-weight: 700;
-  padding: 9px 20px;
+  padding: 10px 20px;
   line-height: 20px;
   text-align: center;
   text-decoration: none;
@@ -275,11 +276,8 @@ th {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+  -webkit-box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 0.2); }
   .form-control:focus, .form-control:hover {
     outline: 0; }
   .form-control:focus {
@@ -291,6 +289,8 @@ th {
     color: #b0b0b0; }
   .form-control::-webkit-input-placeholder {
     color: #b0b0b0; }
+  .form-control.error {
+    border-color: red; }
 
 textarea.form-control {
   height: auto; }
@@ -897,5 +897,18 @@ a {
 
 [role="button"] {
   cursor: pointer; }
+
+.popup-block {
+  width: 340px;
+  padding: 30px 20px;
+  background: url("../img/b04_bg.jpg") top center no-repeat; }
+  .popup-block .popup-block-title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3); }
 
 /*# sourceMappingURL=main.css.map */
