@@ -558,9 +558,9 @@ input[type="checkbox"]:focus {
     border-bottom: 1px solid #575757; }
   .b01 .top__logo {
     left: 0;
-    top: 31px;
-    width: 208px;
-    height: 41px;
+    top: 5px;
+    width: 153px;
+    height: 80px;
     position: absolute;
     background: url("../img/logo.png") 0 0 no-repeat; }
   .b01 .top__contact {
